@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Mera Pizza</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS PERSONAL -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Tipografías -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        html { scroll-behavior: smooth; }
+
+        /* Nueva tipografía elegante */
+        .section-title, .subsection-title {
+            font-family: "Playfair Display", serif !important;
+            letter-spacing: 0.5px;
+        }
+        .section-title {
+            font-size: 2.4rem;
+            font-weight: 600;
+        }
+        .subsection-title {
+            font-size: 1.7rem;
+            font-weight: 400;
+            color: #e60023;
+        }
+    </style>
+</head>
+
+<body>
+<div class="curva-superior"></div>
+<div class="curva-inferior"></div>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-danger">
+  <div class="container">
+
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="img/logo.png.jpeg" alt="Logo La Mera Pizza" class="img-fluid" style="height:55px;">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuLMP">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menuLMP">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link fw-bold" href="#pizzas">Pizzas</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold" href="#gratinados">Gratinados</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold" href="#nofalte">Bebidas</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold" href="#adiciones">Adiciones</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold" href="#Conocenos">Visitanos</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="height:75px;"></div>
+
+<!-- PORTADA -->
+<section class="header-section d-flex flex-column justify-content-center align-items-center">
+    <!-- Logo centrado debajo -->
+    <img src="img/logo.png.jpg.jpeg" class="main-logo img-fluid" alt="Logo La Mera Pizza">
+</section>
+
+
+
+
+<div class="divider"></div>
+
+<!-- ======================= PIZZAS ======================= -->
+<h2 id="pizzas" class="section-title mb-4">PIZZAS</h2>
+<section class="container py-4">
+
+    <h2 class="section-title mb-4">PRECIOS Y TAMAÑOS</h2>
+
+    <!-- TABLA PRECIOS -->
+    <div class="full-size-table p-3 mb-5">
+
+        <div class="table-row table-header row text-center py-2">
+            <span class="col">TAMAÑO</span>
+            <span class="col">ESPECIALES</span>
+            <span class="col">TRADICIONALES</span>
+            <span class="col">BORDE QUESO</span>
+            <span class="col">TRES QUESOS</span>
+        </div>
+
+        <div class="table-row row">
+            <span class="col" data-label="Tamaño">PORCIÓN</span>
+            <span class="col" data-label="Especiales">$9.700</span>
+            <span class="col" data-label="Tradicionales">$8.700</span>
+            <span class="col" data-label="Borde Queso">$3.000</span>
+            <span class="col" data-label="Tres Quesos">$3.500</span>
+        </div>
+
+        <div class="table-row row">
+    <span class="col" data-label="Tamaño">
+        PERSONAL <small class="porciones">(4 porciones)</small>
+    </span>
+            <span class="col" data-label="Especiales">$20.500</span>
+            <span class="col" data-label="Tradicionales">$19.000</span>
+            <span class="col" data-label="Borde Queso">$6.500</span>
+            <span class="col" data-label="Tres Quesos">$7.500</span>
+        </div>
+
+        
+
+        <div class="table-row row">
+           <span class="col" data-label="Tamaño">
+        MEDIANA <small class="porciones">(8 porciones)</small>
+    </span>
+            <span class="col" data-label="Especiales">$35.000</span>
+            <span class="col" data-label="Tradicionales">$31.000</span>
+            <span class="col" data-label="Borde Queso">$8.000</span>
+            <span class="col" data-label="Tres Quesos">$8.500</span>
+        </div>
+
+        <div class="table-row row">
+            <span class="col" data-label="Tamaño">
+        FAMILIAR <small class="porciones">(12 porciones)</small>
+    </span>
+            <span class="col" data-label="Especiales">$43.500</span>
+            <span class="col" data-label="Tradicionales">$39.500</span>
+            <span class="col" data-label="Borde Queso">$9.000</span>
+            <span class="col" data-label="Tres Quesos">$12.500</span>
+        </div>
+    </div>
+
+       <div class="caja-roja">
+  <h3 class="subsection-title">Calzones de queso</h3>
+  <ul class="product-list mb-4">
+      <li>
+          <div class="product-name"><span>Especial</span><span class="price">$20.500</span></div>
+          <div class="product-name"><span>Tradicional</span><span class="price">$19.000</span></div>
+      </li>
+  </ul>
+</div>
+ 
+    <!-- ESPECIALES -->
+     <div class="caja-blanca">
+    <h3 class="subsection-title">PIZZAS ESPECIALES</h3>
+    <ul class="product-list">
+
+        <li><div class="product-name"><span class="titulo-producto-rojo">Pollo BBQ</span></div><div class="ingredients">Extra queso, maiz, BBQ</div></li>
+        <li><div class="product-name"><span class="titulo-producto-rojo">Pollo Champiñones</span></div><div class="ingredients">Pollo, Champiñones, Queso</div></li>
+        <li><div class="product-name"><span class="titulo-producto-rojo">Paisa</span></div><div class="ingredients">Extra queso, Carne molida, Chorizo, Maiz</div></li>
+        <li><div class="product-name"><span class="titulo-producto-rojo">Desmechada</span></div><div class="ingredients">Extra Queso, Carne, Champiñones, Maiz</div></li>
+        <li><div class="product-name"><span class="titulo-producto-rojo">Ranchera</span></div><div class="ingredients">Extra Queso, Jamon, Tocineta ranchera, Maiz</div></li>
+        <li><div class="product-name"><span class="titulo-producto-rojo">Primavera</span></div><div class="ingredients">Extra Queso, Jamon, Champiñones, Maiz, Pimenton, Tocineta</div></li>
+        <li><div class="product-name"><span class="titulo-producto-rojo">Mixta</span></div><div class="ingredients">Extra Queso, Jamon, Salami, Pepperoni, Tocineta, Oregano</div></li>
+        <li><div class="product-name"><span class="titulo-producto-rojo">Campesina</span></div><div class="ingredients">Extra Queso, Tocineta, Chorizo, Maiz, Pimenton</div></li>
+        <li><div class="product-name"><span class="titulo-producto-rojo">Tocineta</span></div><div class="ingredients">Extra Queso, Tocineta, Jamon</div></li>
+        <li><div class="product-name"><span class="titulo-producto-rojo">Sin Limite</span></div><div class="ingredients">Extra Queso, Jamon, Salami, Chorizo, Pepperoni, Tocineta, Maiz, Champiñones, Piña</div></li>
+        <li><div class="product-name"><span class="titulo-producto-rojo">Suprema</span></div><div class="ingredients">Extra Queso, Pollo, Pepperoni, Champiñones, Maiz, Piña</div></li>
+        <li><div class="product-name"><span class="titulo-producto-rojo">Vegetariana</span></div><div class="ingredients">Extra Queso, Maiz, Piña, Champiñones, Pimenton, Tomate</div></li>
+        <li><div class="product-name"><span  class="titulo-producto-rojo" >Arequipe</span></div><div class="ingredients">Arequipe, Queso, Lecherita</div></li>
+
+    </ul>
+  </div>
+
+<div class="caja-roja mt-4">
+  <h3 class="subsection-title">TRADICIONALES</h3>
+  <ul class="product-list mb-4">
+      <li>
+          <div class="product-name"><span>Hawaiana</span></div>
+          <div class="ingredients">Piña, Jamón, Queso</div>
+      </li>
+      <li>
+          <div class="product-name"><span>Salami</span></div>
+          <div class="ingredients">Salami y queso mozzarella</div>
+      </li>
+      <li>
+          <div class="product-name"><span>Jamón</span></div>
+          <div class="ingredients">Jamón y queso mozzarella</div>
+      </li>
+      <li>
+          <div class="product-name"><span>Chorizo</span></div>
+          <div class="ingredients">Chorizo y queso mozzarella</div>
+      </li>
+      <li>
+          <div class="product-name"><span>Pepperoni</span></div>
+          <div class="ingredients">Pepperoni y queso mozzarella</div>
+      </li>
+  </ul>
+</div>
+
+
+    <!-- Columna de imágenes -->
+    <div class="col-md-6 d-flex justify-content-center flex-wrap">
+      <img src="img/Pizza mediana.png.jpg" alt="Pizza 1" class="rounded-circle img-fluid m-2" style="width:150px; height:150px; object-fit:cover;">
+      <img src="img/pizzagrande.png.jpg" alt="Pizza 2" class="rounded-circle img-fluid m-2" style="width:150px; height:150px; object-fit:cover;">
+    </div>
+  </div>
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ======================= GRATINADOS ======================= -->
+
+<section class="container py-4">
+
+    <h2 id="gratinados" class="section-title">GRATINADOS</h2>
+
+    <div class="row g-3 my-4">
+        <div class="col-12 col-md-4"><div class="collage-img tall" style="background-image:url('img/burrito.png.jpg');"></div></div>
+        <div class="col-6 col-md-4"><div class="collage-img" style="background-image:url('img/lasagña.png.jpg');"></div></div>
+        <div class="col-6 col-md-4"><div class="collage-img" style="background-image:url('img/patacon.png.jpg');"></div></div>
+    </div>
+
+    
+  <div class="caja-blanca">
+    <h3 class="subsection-title">¡PATACONES!</h3>
+    <ul class="product-list mb-4">
+
+        <li>
+            <div class="product-name">
+                <span class="titulo-producto-rojo">Sencillo</span>
+                <span class="price">$16.000</span>
+            </div>
+            <div class="ingredients">Carne desmechada o Pollo, Queso Gratinado</div>
+        </li>
+
+        <li>
+            <div class="product-name">
+                <span class="titulo-producto-rojo">Mixto</span>
+                <span class="price">$16.500</span>
+            </div>
+            <div class="ingredients">Carne desmechada, Pollo, Queso Gratinado</div>
+        </li>
+
+    </ul>
+</div>
+
+    
+
+   <div class="caja-roja">
+  <h3 class="subsection-title">MAICITOS</h3>
+  <ul class="product-list mb-4">
+      <li>
+          <div class="product-name"><span>Maicitos</span><span class="price">$16.500</span></div>
+          <div class="ingredients">Pollo, Jamon, Piña, Queso, Maiz, Nacho y Salsas</div>
+      </li>
+  </ul>
+</div>
+
+
+    <div class="caja-blanca">
+    <h3 class="subsection-title">¡Lasañas Personales!</h3>
+
+    <ul class="product-list mb-4">
+
+        <li>
+            <div class="product-name">
+                <span class="titulo-producto-rojo">Sencilla</span>
+                <span class="price">$16.500</span>
+            </div>
+            <div class="ingredients">
+                Carne Molida o Pollo, Queso Gratinado
+            </div>
+        </li>
+
+        <li>
+            <div class="product-name">
+                <span class="titulo-producto-rojo">Mixta</span>
+                <span class="price">$17.500</span>
+            </div>
+            <div class="ingredients">
+                Carne Molida, Pollo, Queso Gratinado
+            </div>
+        </li>
+
+    </ul>
+</div>
+
+<div class="caja-roja">
+    <h3 class="subsection-title mt-4">¡Quesadillas!</h3>
+
+    <ul class="product-list mb-4">
+        <li>
+            <div class="product-name">
+                <span>Hawaiana</span>
+                <span class="price">$17.500</span>
+            </div>
+            <div class="ingredients">Jamon, Piña, Queso, Sour Cream</div>
+        </li>
+
+        <li>
+            <div class="product-name">
+                <span>Sencilla</span>
+                <span class="price">$17.500</span>
+            </div>
+            <div class="ingredients">Carne o Pollo, Queso Gratinado, Sour Cream, Nachos</div>
+        </li>
+
+        <li>
+            <div class="product-name">
+                <span>Especial</span>
+                <span class="price">$17.500</span>
+            </div>
+            <div class="ingredients">Carne, Pollo, Queso Gratinado, Sour Cream, Nachos</div>
+        </li>
+    </ul>
+</div>
+
+
+<div class="caja-blanca">
+    <h3 class="subsection-title">BURRITOS</h3>
+
+    <ul class="product-list mb-4">
+
+        <li>
+            <div class="product-name">
+                <span class="titulo-producto-rojo">Tocineta</span>
+                <span class="price">$17.500</span>
+            </div>
+            <div class="ingredients">
+                Pollo, Tocineta, Maiz, Queso, Sour Cream
+            </div>
+        </li>
+
+        <li>
+            <div class="product-name">
+                <span class="titulo-producto-rojo">Pollo Hawaiano</span>
+                <span class="price">$17.500</span>
+            </div>
+            <div class="ingredients">
+                Jamon, Pollo, Piña, Champiñones, Queso
+            </div>
+        </li>
+
+    </ul>
+</div>
+
+
+
+</section>
+
+<div class="divider"></div>
+
+<section class="fondo-lateral">
+
+</section>
+<!-- ======================= NO FALTE ======================= -->
+
+<section class="container py-4">
+
+
+    <div class="caja-roja">
+    <h2 id="nofalte" class="section-title">Bebidas</h2>
+
+    <ul class="product-list mb-4">
+        <li>
+            <div class="product-name">
+                <span>Gaseosa 1.5 Lts</span>
+                <span class="price">$7.500</span>
+            </div>
+        </li>
+
+        <li>
+            <div class="product-name">
+                <span>Gaseosa 400 ml</span>
+                <span class="price">$4.000</span>
+            </div>
+        </li>
+
+        <li>
+            <div class="product-name">
+                <span>Milo</span>
+                <span class="price">$7.000</span>
+            </div>
+        </li>
+
+        <li>
+            <div class="product-name">
+                <span>Limonada de Coco</span>
+                <span class="price">$7.500</span>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="caja-blanca">
+    <h3 class="subsection-title">JUGOS NATURALES</h3>
+
+    <ul class="product-list mb-4">
+
+        <li>
+            <div class="product-name">
+                <span class="titulo-producto-rojo">Agua</span>
+                <span class="price">$6.500</span>
+            </div>
+        </li>
+
+        <li>
+            <div class="product-name">
+                <span class="titulo-producto-rojo">Leche</span>
+                <span class="price">$7.000</span>
+            </div>
+        </li>
+
+        <li>
+            <div class="product-name">
+                <span class="titulo-producto-rojo">Mango – Mora – Guanábana – Maracuyá</span>
+            </div>
+        </li>
+
+    </ul>
+</div>
+
+
+
+    <div class="row g-3 my-4">
+        <div class="col-6"><div class="collage-img" style="background-image:url('img/jugosnaturalez.jpg');"></div></div>
+        <div class="col-6"><div class="collage-img wide" style="background-image:url('img/jugonatural.png.jpg');"></div></div>
+    </div>
+
+</section>
+
+<!-- ======================= ADICIONES ======================= -->
+
+<section class="container py-4">
+
+  <hr class="border-3 border-white opacity-100 my-5">
+
+<div class="caja-roja">
+    <h2 id="adiciones" class="section-title">ADICIONES</h2>
+
+    <ul class="product-list mb-4">
+
+        <li>
+            <div class="product-name">
+                <span>Queso</span>
+                <span class="price">$7.000</span>
+            </div>
+
+            <div class="product-name">
+                <span>Carne</span>
+                <span class="price">$7.000</span>
+            </div>
+
+            <div class="product-name">
+                <span>Pollo</span>
+                <span class="price">$7.000</span>
+            </div>
+        </li>
+
+        <li class="mt-3">
+            <div class="product-name">
+                <span>Tradicionales</span>
+                <span class="price">$3.500</span>
+            </div>
+
+            <div class="ingredients">
+                chorizo - Salami - Piña - Pepperoni - Maicitos - Salchicha - 
+                Tocineta - Tomate - Champiñones - Jamon - Pimenton
+            </div>
+        </li>
+
+    </ul>
+</div>
+
+
+  <div class="row g-3 my-4">
+      <div class="col-6"><div class="collage-img" style="background-image:url('img/adicioncarne.png.jpg');"></div></div>
+      <div class="col-6"><div class="collage-img wide" style="background-image:url('img/adicionqueso2.png.jpg');"></div></div>
+  </div>
+
+</section>
+
+<!-- BOTÓN FLOTANTE PREMIUM -->
+<button
+  class="whatsapp-premium-btn show-whatsapp"
+  data-bs-toggle="modal"
+  data-bs-target="#whatsappPremiumModal">
+
+  <i class="fab fa-whatsapp"></i>
+  <span>Pide ya</span>
+</button>
+
+
+
+<!-- MODAL PREMIUM -->
+<div class="modal fade" 
+     id="whatsappPremiumModal" 
+     tabindex="-1"
+     data-bs-backdrop="static"
+     data-bs-keyboard="false">
+
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content premium-modal">
+
+      <!-- HEADER -->
+      <div class="modal-header border-0">
+
+        <div class="w-100 text-center">
+          <i class="fab fa-whatsapp display-3 text-success"></i>
+          <h5 class="mt-3 fw-bold text-danger">¿En qué sede deseas pedir?</h5>
+          <p class="text-light opacity-75 mt-2">
+            Selecciona tu sede y te llevamos directo al WhatsApp correspondiente.
+          </p>
+        </div>
+
+        <!-- BOTÓN X -->
+        <button type="button" class="btn-close btn-close-white" 
+                data-bs-dismiss="modal" aria-label="Cerrar"></button>
+
+      </div>
+
+      <div class="modal-body">
+
+        <!-- SEDE CASTILLA -->
+        <a href="https://wa.me/573138604664?text=Hola!%20Deseo%20hacer%20un%20pedido." 
+           class="btn btn-danger w-100 py-3 mb-4 d-flex align-items-center justify-content-between shadow">
+
+          <span class="fw-bold fs-5">Castilla</span>
+          <i class="fa-solid fa-circle-chevron-right fs-4"></i>
+        </a>
+
+        <!-- SEDE SANTA CRUZ -->
+        <a href="https://wa.me/573245508312?text=Hola!%20Deseo%20hacer%20un%20pedido." 
+           class="btn btn-danger w-100 py-3 d-flex align-items-center justify-content-between shadow">
+
+          <span class="fw-bold fs-5">Santa Cruz</span>
+          <i class="fa-solid fa-circle-chevron-right fs-4"></i>
+        </a>
+
+      </div>
+
+      <!-- 🔴 BOTÓN EXTRA PARA CERRAR MANUALMENTE -->
+      <div class="modal-footer border-0 d-flex justify-content-center">
+        <button class="btn btn-outline-light fw-bold px-4 py-2"
+                data-bs-dismiss="modal">
+          Cerrar
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white py-5 mt-5 border-top border-danger">
+  <div class="container">
+      <h2 id="Conocenos" class="titulo-visitanos" >Visitanos</h2>
+
+    <div class="row text-center text-md-start">
+
+      <div class="col-12 col-md-4 mb-4">
+        <h4 class="fw-bold text-danger">Castilla</h4>
+        <p class="mb-1">📍 Dirección: Carrera 68#93-104 </p>
+        <p class="mb-1">De Lunes - Viernes</p>
+        <p class="mb-1">⏰ Horario: 5 pm - 12 a.m</p>
+        <p class="mb-1">SABADOS Y DOMINGOS</p>
+        <p class="mb-1">⏰ Horario: 4 pm - 12 a.m</p>
+        <p class="mb-1">📞 Contacto: 3138604664</p>
+      </div>
+
+      <div class="col-12 col-md-4 mb-4">
+        <h4 class="fw-bold text-danger">Santa Cruz</h4>
+        <p class="mb-1">📍 Dirección: Carrera 49#100-05</p>
+                <p class="mb-1">De Lunes - Viernes</p>
+        <p class="mb-1">⏰ Horario: 4 pm - 10:30 a.m</p>
+        <p class="mb-1">SABADOS Y DOMINGOS</p>
+        <p class="mb-1">⏰ Horario: 3 pm - 11:30 a.m</p>
+        <p class="mb-1">📞 Contacto: 3245508312</p>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <h4 class="fw-bold text-danger text-center text-md-start">Nuestras Redes</h4>
+
+       <div class="d-flex justify-content-center justify-content-md-start mt-3 gap-4">
+
+  <a href="https://www.tiktok.com/@merapizza?is_from_webapp=1&sender_device=pc" 
+     target="_blank"
+     class="text-danger social-icon">
+      <i class="fa-brands fa-tiktok"></i>
+  </a>
+
+  <a href="https://www.instagram.com/lamerapizza.med?utm_source=qr&igsh=MXFzd21raXpvY2tiYg==" 
+     target="_blank" 
+     class="text-danger social-icon">
+      <i class="fa-brands fa-instagram"></i>
+  </a>
+
+  <a href="https://www.facebook.com/share/1KJouumPrJ/" 
+     target="_blank" 
+     class="text-danger social-icon">
+      <i class="fa-brands fa-facebook"></i>
+  </a>
+
+</div>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS PERSONAL ORGANIZADO -->
+<script src="js/app.js"></script>
+
+</body>
+</html>
