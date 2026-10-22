@@ -125,6 +125,42 @@ body {
     font-size: 1.25rem;
 }
 
+.nuevo-tag {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 12px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #ffd93d, #fbbf24, #f59e0b);
+    color: #1a1a1a;
+    font-size: 0.72rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    box-shadow: 0 0 0 2px rgba(251, 191, 36, 0.2), 0 0 18px rgba(255, 217, 61, 0.8), 0 6px 18px rgba(245, 158, 11, 0.35);
+    border: 1px solid rgba(255,255,255,0.4);
+    animation: nuevo-badge-pulse 1.5s ease-in-out infinite;
+    transform: translateY(0);
+}
+
+.mobile-option-title {
+    display: none;
+}
+
+@keyframes nuevo-badge-pulse {
+    0% {
+        transform: scale(1) translateY(0);
+        box-shadow: 0 0 0 2px rgba(251, 191, 36, 0.15), 0 0 12px rgba(255, 217, 61, 0.7), 0 6px 18px rgba(245, 158, 11, 0.3);
+    }
+    50% {
+        transform: scale(1.06) translateY(-1px);
+        box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.22), 0 0 20px rgba(255, 217, 61, 1), 0 8px 22px rgba(245, 158, 11, 0.45);
+    }
+    100% {
+        transform: scale(1) translateY(0);
+        box-shadow: 0 0 0 2px rgba(251, 191, 36, 0.15), 0 0 12px rgba(255, 217, 61, 0.7), 0 6px 18px rgba(245, 158, 11, 0.3);
+    }
+}
+
 /* ================================
    COLLAGE
 ================================ */
@@ -278,23 +314,39 @@ footer img:hover {
 
     /* Estilo de cada celda (span) */
     .table-row span {
-        display: flex;
-        justify-content: space-between;
-        padding: 6px 0;
+        display: block;
+        padding: 8px 10px;
         font-size: 1rem;
+    }
+
+    .mobile-option-title {
+        display: block;
+        width: 100%;
+        margin: 6px 0 4px;
+        font-weight: 700;
+        color: #ffd600;
     }
 
     /* Aquí ocurre la magia ↓↓↓ */
     .table-row span::before {
+        display: block;
         content: attr(data-label); /* ❤️ Muestra el título: Tamaño, Especiales, etc */
         font-weight: 700;
         color: #ffd600; /* Amarillo estilo LMP */
-        margin-right: 10px;
+        margin-bottom: 6px;
     }
 
     /* Oculta el label para la primera celda */
     .table-row span:first-child::before {
-        content: "Tamaño";
+        content: none;
+    }
+
+    .table-row span .mobile-option-title {
+        display: block;
+        width: 100%;
+        margin: 4px 0 2px;
+        font-size: 0.9rem;
+        color: #ffd600;
     }
 
     /* Para las filas de texto pequeño (porciones) */
